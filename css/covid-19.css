@@ -1,0 +1,339 @@
+:root{
+    --main-color:#fa9805;
+    --black:#244361;
+    --box-shadow:0px 5px 10px rgba(0,0,0,.1);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-padding-top: 60px;
+}
+header{
+    box-shadow: var(--box-shadow);
+    background: #fff;
+}
+header .logo{
+    font-size: 20px;
+    color: var(--black);
+}
+header .logo span{
+    color: var(--main-color);
+}
+header .nav a{
+    margin-left: 5px;
+    padding: 5px 10px;
+    color: var(--black);
+}
+header .nav a.Active,
+header .nav a:hover{
+    background: var(--main-color);
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border-radius: 10px;
+} 
+
+#menu-bar{
+    font-size: 25px;
+    color: var(--black);
+    cursor: pointer;
+}
+/*--------------------Home section styling-----------------------------*/
+.home span{
+    color:var(--main-color);
+    font-size: 25px;
+}
+.home h3{
+    color: var(--black);
+    font-size: 50px;
+    font-weight: bolder;
+}
+.learn-btn{
+    display: inline-block;
+    background: var(--main-color);
+    color: white;
+    box-shadow: var(--box-shadow);
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.learn-btn:hover{
+    background:var(--black);
+    color: var(--main-color);
+}
+/*------------------About section styling----------------------*/
+.about .content h3{
+    color: var(--black);
+    font-size: 30px;
+    margin: 10px;
+}
+/*--------------------Prevent section style------------------*/
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: var(--black);
+    padding: 30px;
+}
+.heading span{
+    color: var(--main-color);
+}
+.prevent .box{
+    flex: 1 1 300px;
+    background: #f8f8fe;
+    border-radius: 5px;
+    text-align: center;
+}
+.prevent .box img{
+    height: 70px;
+    margin-bottom: 10px;
+}
+.prevent .box h3{
+    color: var(--main-color);
+    font-size: 20px;
+}
+.prevent .box p{
+    color: var(--black);
+    font-size: 15px;
+}
+/*------------------------Experts styling--------------*/
+.experts{
+    background: #f8f8fe;
+}
+.experts .box{
+    width: 260px;
+    height:400px ;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    margin: 5px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+.experts .box img{
+    width: 100%;
+    height: 320px;
+    background: #f8f8fe;
+    margin-bottom:5px;
+}
+.experts .box h3{
+    color: var(--black);
+    margin:5px 0;
+    font-size: 20px;
+}
+.experts .box span{
+    color: var(--main-color);
+    font-size: 15px;
+}
+.experts .box .share{
+    position:absolute;
+    top: 5px;
+    right: -50px;
+    transition: .2s;
+}
+.experts .box:hover .share{
+    right: 15px;
+}
+.experts .box .share a{
+    display: block;
+    background: var(--main-color);
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.experts .box .share a:hover{
+    background: var(--black);
+}
+.experts .box .share .fa-facebook{
+    color: #4267B2;
+    font-size: 20px;
+}
+.experts .box .share .fa-twitter{
+    color: #1DA1F2;
+    font-size: 20px;
+}
+.experts .box .share .fa-instagram{
+    color: #8a3ab9;
+    font-size: 20px;
+}
+.experts .box .share .fa-linkedin{
+    color: #0077b5;
+    font-size: 20px;
+}
+/*----------------Blogs style----------------*/
+.blogs{
+    background:#f8f8fe;
+}
+.blogs .box{
+    width: 350px;
+    height: 500px;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--black);
+}
+.blogs .box img{
+    width: 100%;
+    height: 300px;
+    transition: .2s linear;
+}
+.blogs .box h3{
+    color: var(--black);
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.blogs .box:hover img{
+    transform: scale(1.1);
+}
+.box .blog-icon{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid rgba(0,0,0,.1);
+}
+.box .blog-icon a{
+    color: gray;
+    font-size: 20px;
+    padding-top:10px;
+}
+.box .blog-icon a:hover{
+    color: var(--main-color);
+}
+/*--------------------Contact styling----------------------*/
+.contact form{
+    padding:15px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    width:100%;
+}
+.contact form .box,
+.contact form textarea{
+    background: #f8f8fe;
+    color: var(--black);
+    width: 100%;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 10px;
+    margin:7px 0px;
+    text-transform: none;
+    border
+}
+.contact form textarea{
+    height: 200px;
+    resize: none;
+}
+.contact .map{
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+}
+/*------------footer styling-------------*/
+  .footer{
+   width:100%;
+}
+.footer .logo{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--black);
+}
+.footer .logo span{
+    color: var(--main-color);
+}
+.footer .box{
+    flex: 1 1 250px;
+}
+.footer .box h3{
+    color: var(--black);
+    font-size: 20px;
+}
+.footer .box a{
+    display: block;
+    color: #777;
+    font-size: 14;
+}
+.footer .box a:hover{
+    color: var(--main-color);
+}
+.footer .credit{
+    text-align: center;
+    color: var(--black);
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-top: 15px;
+    padding-top: 10px;
+}
+.footer .credit span{
+    color: var(--main-color);
+}
+#scrolltop-btn{
+    display: none;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    color: white ;
+    background: var(--main-color);
+}
+#scrolltop-btn:hover{
+    background: var(--black);
+}
+
+
+
+
+/*-----------Media Query--------*/
+
+/*-----------menu-------------*/
+@media (max-width:768px){
+    header .nav{
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 100%;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        transition: 0.2 linear;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+    header .nav.active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+    header .nav a{
+        display: block;
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+    }
+
+}
+/*----------------Home------------*/
+@media (max-width:1200px) {
+    .home h3{
+        color: var(--black);
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    
+}
